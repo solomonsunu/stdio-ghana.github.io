@@ -8,5 +8,5 @@ year: 2014
 
 Hello!!
 This is Alexis. I'm a combined Mathematics and Computer Science student.
-I do love to program a lot. I have programmed in Python, Matlab, C++ and Java.
+I love to do a lot of programming and have programmed in Python, Matlab, C++ and Java.
 I do like to work a lot but do not like to be in the mist of a lot of people.

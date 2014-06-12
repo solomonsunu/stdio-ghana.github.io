@@ -1,9 +1,16 @@
+.top_nav {
+  text-align: left;
+  padding: 0em;
+  margin: 0em;
+  font-size: 1.5em;
+  position: fixed;
+  top: 1px;
+  list-style-type: none;
+  background-color: #313157;
+  border-radius: 5px;
+}
 .top_nav li {
-  display: inline-block;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  margin-top: -0.5em;
-  margin-bottom: -0.5em;
+  margin: 0em;
   color: #c5b358;
   border-radius: 5px;
 }
@@ -21,16 +28,9 @@
   padding: 0.5em;
   display: block;
 }
-.top_nav {
-  text-align: center;
-  background-color: #313157;
-  padding: 0px;
-  font-size: 1.5em;
-}
 .main {
-  width: 50em;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 50em;
+  margin-left: 13em;
   padding: 1em;
   color: #ffffff;
   background-color: #1a1a1a;

@@ -7,12 +7,13 @@
   top: 1px;
   list-style-type: none;
   background-color: #313157;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .top_nav li {
   margin: 0em;
   color: #c5b358;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .top_nav li:hover {
   background-color: #fff44f;

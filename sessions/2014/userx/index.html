@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<link href='/assets/presentation-bbbc6eadfa99bf15449457a2f35411bb.css' rel='stylesheet' type='text/css' />
+  <title>STDIO Ghana - User Interfaces</title>
+<link href='/assets/presentation-512e54a0246d968391df131ca56c0d90.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -38,29 +39,32 @@ Seifu
       <p>Type name, press ENTER</p>
     </li>
   </ul>
+
 </section>
 
 <section>
   <p>Command line interface (CLI):</p>
 
   <ul>
-    <li>Arguments passed after program name</li>
+    <li>Arguments passed after program name
+      <ul>
+        <li><code>ls -lh</code></li>
+        <li><code>tar -czvvf my_new_tar_file.tgz ./*</code></li>
+      </ul>
+    </li>
+    <li>Interactive UI
+      <ul>
+        <li><code>fdisk</code></li>
+      </ul>
+    </li>
+    <li>Special cases:
+      <ul>
+        <li>servers</li>
+        <li>supercomputers</li>
+      </ul>
+    </li>
   </ul>
 
-  <p>– ls -lh
-– tar -czvvf my_new_tar_file.tgz ./*</p>
-
-  <ul>
-    <li>
-      <p>Interactive UI
-– fdisk</p>
-    </li>
-    <li>
-      <p>Special cases:
-– servers
-– supercomputers</p>
-    </li>
-  </ul>
 </section>
 
 <section>
@@ -69,16 +73,29 @@ Seifu
 </section>
 
 <section>
-  <p>Graphical user interface (GUI):
-- Common operating systems
-– Windows, OS X, Gnome/KDE/XFCE for linux
-- Most commercial or consumer-targeted software
-– Office
-– Photoshop
-– Firefox
-- Special cases:
-– Websites
-– Touch screens</p>
+  <p>Graphical user interface (GUI):</p>
+
+  <ul>
+    <li>Common operating systems
+      <ul>
+        <li>Windows, OS X, Gnome/KDE/XFCE for linux</li>
+      </ul>
+    </li>
+    <li>Most commercial or consumer-targeted software
+      <ul>
+        <li>Office</li>
+        <li>Photoshop</li>
+        <li>Firefox</li>
+      </ul>
+    </li>
+    <li>Special cases:
+      <ul>
+        <li>Websites</li>
+        <li>Touch screens</li>
+      </ul>
+    </li>
+  </ul>
+
 </section>
 
 <section>
@@ -93,54 +110,85 @@ Should complex software have a complex interface?</p>
 
 <section>
   <p>Creating simple interfaces for complex software is hard!
-Broad principles:
-- Know your users and what they know
-- Exploit familiar interface patterns
-- Exploit psychology and culture</p>
+Broad principles:</p>
+
+  <ul>
+    <li>Know your users and what they know</li>
+    <li>Exploit familiar interface patterns</li>
+    <li>Exploit psychology and culture</li>
+  </ul>
+
 </section>
 
 <section>
-  <p>Know your users.  Are they:
-- Kids or adults
-- One time or long term users
-- Novices or experienced programmers</p>
+  <p>Know your users.  Are they:</p>
+
+  <ul>
+    <li>Kids or adults</li>
+    <li>One time or long term users</li>
+    <li>Novices or experienced programmers</li>
+  </ul>
+
 </section>
 
 <section>
-  <p>Know your users (cont.)
-- Make common things easy
-- Create basic/advanced alternative interfaces [Examples?]
-- Create customizable interfaces [Examples?]</p>
+  <p>Know your users (cont.)</p>
+
+  <ul>
+    <li>Make common things easy</li>
+    <li>Create basic/advanced alternative interfaces [Examples?]</li>
+    <li>Create customizable interfaces [Examples?]</li>
+  </ul>
+
 </section>
 
 <section>
-  <p>Exploit familiar interface patterns
-- What does flipping a switch do?
-- What does turning a dial do?
-- Swiping? Ctrl + V? Clicking an ‘X’?
-[What are some more examples of ingrained controls?]</p>
+  <p>Exploit familiar interface patterns</p>
+
+  <ul>
+    <li>What does flipping a switch do?</li>
+    <li>What does turning a dial do?</li>
+    <li>Swiping? Ctrl + V? Clicking an ‘X’?
+[What are some more examples of ingrained controls?]</li>
+  </ul>
+
 </section>
 
 <section>
-  <p>Exploit familiar interface patterns (cont.)
-- Command line tools: reuse familiar flags!
-[Find some CL tools, compare the flags and their meanings.]</p>
+  <p>Exploit familiar interface patterns (cont.)</p>
+
+  <ul>
+    <li>Command line tools: reuse familiar flags!
+[Find some CL tools, compare the flags and their meanings.]</li>
+  </ul>
+
 </section>
 
 <section>
-  <p>Exploit psychology and culture
-- If you step into an unfamiliar room, where do you look first for the light switch?
-- How do you choose whether to push or pull a door?
-- If something is flashing red, what does that mean? Other colors?</p>
+  <p>Exploit psychology and culture</p>
+
+  <ul>
+    <li>If you step into an unfamiliar room, where do you look first for the light switch?</li>
+    <li>How do you choose whether to push or pull a door?</li>
+    <li>If something is flashing red, what does that mean? Other colors?</li>
+  </ul>
+
 </section>
 
 <section>
-  <p>Exploit psychology (cont.)
-- Put things where people will naturally look for them
-– Controls near the thing they control
-- Group related things
-- Hide confusing/misleading options
-- Use good documentation/pop up messages to target subtle or misleading controls</p>
+  <p>Exploit psychology (cont.)</p>
+
+  <ul>
+    <li>Put things where people will naturally look for them
+      <ul>
+        <li>Controls near the thing they control</li>
+      </ul>
+    </li>
+    <li>Group related things</li>
+    <li>Hide confusing/misleading options</li>
+    <li>Use good documentation/pop up messages to target subtle or misleading controls</li>
+  </ul>
+
 </section>
 
 <section>
@@ -151,6 +199,17 @@ Having excessive documentation for things that are obvious or unnecessary for th
 <section>
   <p>When you don’t know how to make something better, find some guinea pigs!
 Ask <em>them</em> what they expect to happen when they use your software.</p>
+</section>
+
+<section>
+
+  <ul>
+    <li><code>python -m http.server 8000</code></li>
+    <li><a href="curses_textbox.py">Curses Textbox</a></li>
+    <li><a href="curses_dungeon_maker.py">Curses Dungeon Creator</a></li>
+    <li><a href="tkinterNibbles.py">TKinter Nibbles</a></li>
+  </ul>
+
 </section>
 
 </div></div>

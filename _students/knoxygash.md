@@ -1,6 +1,6 @@
 ---
 layout: blurb
-Name: Manasseh Richmond Odotei
+name: Manasseh Richmond Odotei
 affiliation: University of Ghana
 github: knoxygash
 year: 2014

@@ -4,6 +4,7 @@ name: Collins Afeti Gadawusu
 affiliation: University of Ghana
 github: afetik
 year: 2014
+imagetype: jpg
 ---
 
 Collins is a programmer aspiring to enter into the field

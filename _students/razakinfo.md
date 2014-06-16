@@ -4,6 +4,7 @@ name: Abdul Razak Wasiu
 affiliation: University of Ghana
 github: madibalive
 year: 2014
+imagetype: jpg
 ---
 Hi am a level 100 student in Legon, taking Computer Science.  I like programming and solving problems
 I am very athletic. I surf the net.

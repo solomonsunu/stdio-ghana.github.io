@@ -2,7 +2,7 @@
 layout: blurb
 name: Anthony Alexis Adoasi
 affiliation: University of Ghana
-github: atom
+github: Xixis
 year: 2014
 ---
 

@@ -2,7 +2,7 @@
 layout: blurb
 name: boadu dennis
 affiliation: University of Ghana
-github: atom
+github: boadu
 year: 2014
 ---
 

@@ -1,4 +1,5 @@
 ---
+layout: blurb
 name: Collins Afeti Gadawusu
 affiliation: University of Ghana
 github: afetik

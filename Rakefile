@@ -28,7 +28,7 @@ task :minihtml do
   puts "\n## Compressing html"
   original = 0.0
   compressed = 0
-  Dir["**/*.*"].reject{ |f| f['_site/'] }.each do |file|
+  Dir["_site/**/*.*"].each do |file|
     case File.extname(file)
     when ".html", ".xml"
         puts "Processing: #{file}"

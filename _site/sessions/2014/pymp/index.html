@@ -1,29 +1,34 @@
 <!doctype html>
 <html>
 <head>
-  <title>STDIO Ghana - Parallel Python</title>
-<link href='/assets/presentation-bd1de85e36905f2c7275e8a635fac3e0.css' rel='stylesheet' type='text/css' />
+  <title>STDIO Ghana - Python Multiprocessor</title>
+<link href='/assets/presentation-0e5c0301fdd5869aecb43e89782928b9.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<h2>Parallel Python</h2>
+<h2>Python Multiprocessor</h2>
 
 Carl
 </section>
 
 <section>
-  <p><a href="http://www.parallelpython.com/content/view/15/30/#QUICKSMP">Parallel Python Quickstart</a></p>
+
+  <div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">multiprocessor</span> <span class="kn">as</span> <span class="nn">mp</span>
+
+<span class="c">##do some stuff</span></code></pre></div>
+
 </section>
 
 <section>
   <h2 id="familiar">Familiar?</h2>
-  <aside class="notes">
-    <p>Looks exactly like the Java <code>Executor -&gt; Future</code> model.</p>
 
-    <p>Find some other good syntax comparisons based on their langs.</p>
+  <aside class="notes">
+    <p>Looks like the Java <code>Executor</code> yields <code>Future</code> model.</p>
+
+    <p>What are examples in other languages?</p>
   </aside>
 </section>
 
@@ -40,11 +45,15 @@ Carl
 </section>
 
 <section>
-  <h2 id="pure-python--parallel-vs-c">Pure Python + Parallel vs. C++?</h2>
+  <h2 id="python--multiprocessor-vs-c">Python + Multiprocessor vs. C++?</h2>
   <aside class="notes">
     <p>When does it make sense to deal with parallelizing your code vs finding a c/cpp
 library and using it?</p>
   </aside>
+</section>
+
+<section>
+  <h2 id="alternative-parallel-python-quickstarthttpwwwparallelpythoncomcontentview1530quicksmp">Alternative: <a href="http://www.parallelpython.com/content/view/15/30/#QUICKSMP">Parallel Python Quickstart</a></h2>
 </section>
 
 </div></div>

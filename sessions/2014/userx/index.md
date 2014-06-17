@@ -44,8 +44,10 @@ Command line interface (CLI):
 
 </section>
 
+<section>
 <section markdown="block">
 What makes CLI software easy/hard to use?
+</section>
 <section markdown="block">
 Take the next ten minutes and explore `cat` and `grep` then explain what they do.
 Were they easy to use?
@@ -67,9 +69,10 @@ Graphical user interface (GUI):
 
 </section>
 
+<section>
 <section markdown="block">
 What makes GUI software easy/hard to use?
-
+</section>
 <section markdown ="block">
 With the people around you:
 Compare some interfaces, e.g. Yahoo & Google, Notepad & Word

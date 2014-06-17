@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>STDIO Ghana - Distributed Computing</title>
-<link href='/assets/presentation-fb5e0887bd561f48b7c67a22dfcc4bba.css' rel='stylesheet' type='text/css' />
+<link href='/assets/presentation-154b988963f04b467c210c20d3b96495.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -15,15 +15,19 @@ Carl
 </section>
 
 <section>
-  <h2 id="revisit-what-is-a-computer">Revisit: what is a computer?</h2>
+  <h2 id="what-is-a-computer">What is a computer?</h2>
 
   <aside class="notes">
-    <p>Previous discussion will probably emphasis “serial” thinking.</p>
+    <p>First, there is the serial notion of a computer.  Series of commands, executed
+one after another until desired output achieved.</p>
 
-    <p>This time highlight the “internet” perspective - when you visit
-a website, that’s your computer talking to another computer.  When
-you load two websites, they don’t always give you all the information
-at the same time.  That’s asynchrony</p>
+    <p>There is another perspective, however: the <em>internet</em> perspective - when you
+visit a website, your computer talks to another computer.  When
+you load two websites, the information does not arrive at the same time.</p>
+
+    <p>Many applications use the internet in this way: pulling information from
+multiple sources.  Some applications are making more local use of a network of
+machines - this is what happens with cluster computation.</p>
   </aside>
 </section>
 
@@ -33,6 +37,7 @@ at the same time.  That’s asynchrony</p>
   <p>vs.</p>
 
   <h2 id="asynchronous">Asynchronous</h2>
+
   <aside class="notes">
     <p>Quick vocab check.  Then exercise on with groups manually calculating things
 in series vs parallel.</p>

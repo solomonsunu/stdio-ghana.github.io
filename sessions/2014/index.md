@@ -29,10 +29,10 @@ elements:
    uri: pyio
  - name: Reuse
    uri: reuse
- - name: Python + C++
-   uri: pycpp
  - name: User Interfaces
    uri: userx
+ - name: Python + C++
+   uri: pycpp
  - name: Distributed Computing
    uri: distrib
  - name: Parallel Python

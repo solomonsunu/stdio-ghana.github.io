@@ -57,8 +57,8 @@ The detailed schedule is below:
 || project | review some libraries for reuse, then self-directed work from here on
 || social | Football, then Ghana v. US World Cup game | Dane
 | Tue | warmup | TBD
-|| AM | Python + C++ | Dane
-|| PM | User Interfaces | Seifu
+|| AM | User Interfaces | Seifu
+|| PM | Python + C++ | Dane
 || social | technical presentation practice session
 | Wed | warmup | discuss and pick open topics
 || AM | Distributed Computing | Carl

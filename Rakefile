@@ -1,6 +1,7 @@
 # courtesy of guidance at http://davidensinger.com/
 #require 'bundler/setup'
 require 'reduce'
+require 'image_optim'
 
 task :default => 'all'
 
@@ -10,13 +11,26 @@ task :build do
 end
 
 desc "minimize images"
-task :minimize do
-  puts "\n## Compressing static assets"
+task :minimage do
+  puts "\n## Compressing images"
+  io = ImageOptim.new(:pngout => false)
+  Dir["**/*.*"].reject{ |f| f['_site/'] }.each do |file|
+    case File.extname(file)
+      when ".gif", ".jpg", ".jpeg", ".png"
+        puts "Processing: #{file}"
+        io.optimize_image(file)
+      end
+  end
+end
+
+desc "minimize html"
+task :minihtml do
+  puts "\n## Compressing html"
   original = 0.0
   compressed = 0
   Dir["**/*.*"].reject{ |f| f['_site/'] }.each do |file|
     case File.extname(file)
-      when ".gif", ".jpg", ".jpeg", ".png"
+    when ".html", ".xml"
         puts "Processing: #{file}"
         original += File.size(file).to_f
         min = Reduce.reduce(file)
@@ -54,5 +68,5 @@ task :deploy do
 end
 
 desc "build, commit, and deploy _site/"
-task :all => [:build, :minimize, :commit, :deploy] do
+task :all => [:minimage, :build, :minihtml, :commit, :deploy] do
 end

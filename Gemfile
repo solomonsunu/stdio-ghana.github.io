@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll'
 gem 'reduce'
+gem 'image_optim'
 gem 'less'
 gem 'japr'

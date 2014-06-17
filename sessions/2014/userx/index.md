@@ -46,7 +46,10 @@ Command line interface (CLI):
 
 <section markdown="block">
 What makes CLI software easy/hard to use?
-[Look at some documentation for some CLI utilities, try to complete a couple specific tasks]
+<section markdown="block">
+Take the next ten minutes and explore `cat` and `grep` then explain what they do.
+Were they easy to use?
+</section>
 </section>
 
 <section markdown="block">
@@ -66,7 +69,11 @@ Graphical user interface (GUI):
 
 <section markdown="block">
 What makes GUI software easy/hard to use?
-[Compare some interfaces, e.g. Yahoo & Google, Notepad & Word]
+
+<section markdown ="block">
+With the people around you:
+Compare some interfaces, e.g. Yahoo & Google, Notepad & Word
+</section>
 </section>
 
 <section markdown="block">
@@ -116,7 +123,7 @@ Exploit familiar interface patterns
 Exploit familiar interface patterns (cont.)
 
 - Command line tools: reuse familiar flags!
-[Find some CL tools, compare the flags and their meanings.]
+List as many flags as you know from our course so far. 9 common flags come to mind.
 
 </section>
 

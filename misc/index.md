@@ -41,7 +41,7 @@ have played before:
 ##Weekend Trip Details
 
 We toured [Cape Coast Castle](http://www.capecoastcastlemuseum.com/1.html),
-and then meet with the Operations Officer and students a tour of the
+and then meet with the Operations Officer and students for a tour of the
 [AIMS Ghana](http://www.aims.edu.gh/) facility.
 
 For STDIO Ghana students interested in AIMS, the

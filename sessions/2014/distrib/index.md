@@ -6,15 +6,19 @@ instructors:
  - Carl
 ---
 <section markdown="block">
-## Revisit: what is a computer?
+## What is a computer?
 
 <aside class="notes" markdown="block">
-Previous discussion will probably emphasis "serial" thinking.
+First, there is the serial notion of a computer.  Series of commands, executed
+one after another until desired output achieved.
 
-This time highlight the "internet" perspective - when you visit
-a website, that's your computer talking to another computer.  When
-you load two websites, they don't always give you all the information
-at the same time.  That's asynchrony
+There is another perspective, however: the *internet* perspective - when you
+visit a website, your computer talks to another computer.  When
+you load two websites, the information does not arrive at the same time.
+
+Many applications use the internet in this way: pulling information from
+multiple sources.  Some applications are making more local use of a network of
+machines - this is what happens with cluster computation.
 </aside>
 </section>
 
@@ -24,6 +28,7 @@ at the same time.  That's asynchrony
 vs.
 
 ## Asynchronous
+
 <aside class="notes" markdown="block">
 Quick vocab check.  Then exercise on with groups manually calculating things
 in series vs parallel.

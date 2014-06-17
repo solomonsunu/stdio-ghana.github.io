@@ -18,6 +18,7 @@ exclude:
  - INSTALL.md
  - README.md
  - Rakefile
+ - Gemfile
 collections:
   instructors:
     output: true

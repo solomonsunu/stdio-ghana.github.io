@@ -1,10 +1,32 @@
 # courtesy of guidance at http://davidensinger.com/
+#require 'bundler/setup'
+require 'reduce'
 
 task :default => 'all'
 
 desc "build _site/"
 task :build do
   puts system("jekyll build") ? "Success" : "Failed"
+end
+
+desc "minimize images"
+task :minimize do
+  puts "\n## Compressing static assets"
+  original = 0.0
+  compressed = 0
+  Dir["**/*.*"].reject{ |f| f['_site/'] }.each do |file|
+    case File.extname(file)
+      when ".gif", ".jpg", ".jpeg", ".png"
+        puts "Processing: #{file}"
+        original += File.size(file).to_f
+        min = Reduce.reduce(file)
+        File.open(file, "w") do |f|
+          f.write(min)
+        end
+        compressed += File.size(file)
+      end
+  end
+  puts "Total compression %0.2f\%" % (((original-compressed)/original)*100)
 end
 
 desc "commit _site/"
@@ -20,22 +42,17 @@ end
 desc "deploy _site/"
 task :deploy do
   puts "\n## Deleting master branch"
-  status = system("git branch -D master")
-  puts status ? "Success" : "Failed"
+  puts system("git branch -D master") ? "Success" : "Failed"
   puts "\n## Creating new master branch and switching to it"
-  status = system("git checkout -b master")
-  puts status ? "Success" : "Failed"
+  puts system("git checkout -b master") ? "Success" : "Failed"
   puts "\n## Forcing the _site subdirectory to be project root"
-  status = system("git filter-branch --subdirectory-filter _site/ -f")
-  puts status ? "Success" : "Failed"
+  puts system("git filter-branch --subdirectory-filter _site/ -f") ? "Success" : "Failed"
   puts "\n## Switching back to source branch"
-  status = system("git checkout source")
-  puts status ? "Success" : "Failed"
+  puts system("git checkout source") ? "Success" : "Failed"
   puts "\n## Pushing all branches to origin"
-  status = system("git push --all origin")
-  puts status ? "Success" : "Failed"
+  puts system("git push --all origin") ? "Success" : "Failed"
 end
 
 desc "build, commit, and deploy _site/"
-task :all => [:build, :commit, :deploy] do
+task :all => [:build, :minimize, :commit, :deploy] do
 end

@@ -12,6 +12,11 @@ work.
 incomplete network access.
 - many more students than anticipated; course requires lots of individual
 attention
+- using the vm images was definitely the right approach.  HOWEVER, need to pay
+more attention to making the right image.  For example, should have put our
+program icons on task bar (and removed inane ones), double checked all the
+activities for installation of proper libraries, disabled updates (maybe; alt:
+found way to locally distribute any updates that came up during course)
 
 ###Session Specific Changes
 

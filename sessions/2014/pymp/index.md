@@ -6,6 +6,18 @@ instructors:
  - Carl
 ---
 <section markdown="block">
+###OPINION:
+
+Support for developers using parallelization directly in Python is poor.
+
+If your problem cannot fit into a neat parallelization scheme, *do not use Python
+to solve it*.
+
+Many libraries accomplish parallel tasks by deferring to native code, so that
+can be another option.
+</section>
+
+<section markdown="block">
 ##From AM session:
 
 {% highlight python %}
@@ -50,7 +62,20 @@ slightly more \#\'s than you had
 
 
 <section markdown="block">
-##Familiar?
+##a few fundamental approaches
+
+{% highlight python %}
+# shared data containers
+# - look a lot like atomic vals in Java
+# - alt: synchronized vals
+# explicit shared state management via manager
+# Process
+# - looks basically like Thread in Java
+# Pool - very similar to openmp approach: execute some loop structure in
+# parallel, ignore details of how it gets divied up
+#  uses map, map_async, (apply, apply_async - just one thing)
+
+{% endhighlight %}
 
 <aside class="notes" markdown="block">
 Looks like the Java `Executor` yields `Future` model.

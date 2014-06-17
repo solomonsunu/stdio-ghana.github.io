@@ -67,6 +67,6 @@ task :deploy do
   puts system("git push --all origin") ? "Success" : "Failed"
 end
 
-desc "build, commit, and deploy _site/"
+desc "compress images, build, compress html, commit, and deploy _site/"
 task :all => [:minimage, :build, :minihtml, :commit, :deploy] do
 end

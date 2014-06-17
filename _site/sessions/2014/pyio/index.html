@@ -1,41 +1,6 @@
-<!doctype html>
-<html>
-<head>
-  <title>STDIO Ghana - Python IO</title>
-<link href='/assets/presentation-0e5c0301fdd5869aecb43e89782928b9.css' rel='stylesheet' type='text/css' />
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
-</head>
-<body>
-<div class="reveal"><div class="slides">
-<section>
-<h2>Python IO</h2>
-
-Deanne
-</section>
-
-<section>
-	<h2>Keyboard input</h2>
-	<div class="highlight"><pre><code class="py"><span class="n">myStr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter your input: &quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;Your answer is: &quot;</span><span class="p">)</span></code></pre></div>
-
-</section>
-<section>
-	<h2>File object</h2>
-	<p><i>open</i> function creates a Python file object which links to a file on your machine</p>
-	<p>Once open, strings of data can transferred to and from the file</p>
-	<p>To open a file:</p>
-	<div class="highlight"><pre><code class="py"><span class="n">afile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span>
-<span class="n">afile</span><span class="o">.</span><span class="n">method</span></code></pre></div>
-	<p>The <i>mode</i> can be 'r' for read, 'w' for write, or 'a' to append</p>
-</section>
-<section>
-	<h3>Common file operations</h3>
-	<img src="fileOperations.JPG" WIDTH=600 HEIGHT=594>
-</section>
-<section>
-	<h2>Expample</h2>
-	<div class="highlight"><pre><code class="py"><span class="c"># Write a file</span>
+<!doctype html> <html> <head> <title>STDIO Ghana - Python IO</title> <link href='/assets/presentation-65da1da82bb35b3d39f0b7c5901db486.css' rel='stylesheet' type='text/css'/> <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script> <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script> </head> <body> <div class="reveal"><div class="slides"> <section> <h2>Python IO</h2> Deanne </section> <section> <h2>Keyboard input</h2> <div class="highlight"><pre><code class="py"><span class="n">myStr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter your input: &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Your answer is: &quot;</span><span class="p">)</span></code></pre></div> </section> <section> <h2>File object</h2> <p><i>open</i> function creates a Python file object which links to a file on your machine</p> <p>Once open, strings of data can transferred to and from the file</p> <p>To open a file:</p> <div class="highlight"><pre><code class="py"><span class="n">afile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span>
+<span class="n">afile</span><span class="o">.</span><span class="n">method</span></code></pre></div> <p>The <i>mode</i> can be 'r' for read, 'w' for write, or 'a' to append</p> </section> <section> <h3>Common file operations</h3> <img src="fileOperations.JPG" WIDTH=600 HEIGHT=594> </section> <section> <h2>Expample</h2> <div class="highlight"><pre><code class="py"><span class="c"># Write a file</span>
 <span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span>
 <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;This Text is going to out_file</span><span class="se">\n</span><span class="s">Look at it and see!&quot;</span><span class="p">)</span>
 <span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -45,11 +10,7 @@ Deanne
 <span class="n">text</span> <span class="o">=</span> <span class="n">in_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">in_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code></pre></div>
-</section>
-<section>
-	<h2>Reading csv files</h2>
-	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+<span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></code></pre></div> </section> <section> <h2>Reading csv files</h2> <div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;file path&quot;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span> <span class="c">#input the file path for the PracticeFile.csv</span>
 <span class="k">try</span><span class="p">:</span>
@@ -57,11 +18,7 @@ Deanne
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 <span class="k">finally</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
-</section>
-<section>
-	<h2>Writing to csv files</h2>
-	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div> </section> <section> <h2>Writing to csv files</h2> <div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;yourFileName.csv&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
@@ -72,12 +29,7 @@ Deanne
 <span class="k">finally</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="k">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;yourFileName.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span></code></pre></div>
-</section>
-
-<section>
-	<h2>Reading csv as dictionary</h2>
-	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;yourFileName.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span></code></pre></div> </section> <section> <h2>Reading csv as dictionary</h2> <div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
@@ -85,11 +37,7 @@ Deanne
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 <span class="k">finally</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
-</section>
-<section>
-	<h2>Writing dictionary to csv</h2>
-	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div> </section> <section> <h2>Writing dictionary to csv</h2> <div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;myDictionary.csv&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
@@ -105,47 +53,4 @@ Deanne
 <span class="k">finally</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="k">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;myDictionary.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span></code></pre></div>
-</section>
-<section>
-	<h2>Conversion from strings</h2>
-	<p><a href="datafile.txt">Datafile</p>
-	<p><a href="Conversions.py">Python file</p>
-</section>
-
-<section>
-	<h2>Pickles!!</h2>
-	<p><a href="pickleIO.py">Python file</p>
-</section>
-
-</div></div>
-<script>
-	// Full list of configuration options available here:
-	// https://github.com/hakimel/reveal.js#configuration
-	Reveal.initialize({
-		controls: true,
-		progress: true,
-		history: true,
-		center: true,
-
-		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-		// Parallax scrolling
-		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-		// parallaxBackgroundSize: '2100px 900px',
-
-		// Optional libraries used to extend on reveal.js
-		dependencies: [
-			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-	//		{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-		]
-	});
-</script>
-</body>
-</html>
-
+<span class="k">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;myDictionary.csv&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span></code></pre></div> </section> <section> <h2>Conversion from strings</h2> <p><a href="datafile.txt">Datafile</p> <p><a href="Conversions.py">Python file</p> </section> <section> <h2>Pickles!!</h2> <p><a href="pickleIO.py">Python file</p> </section> </div></div> <script>Reveal.initialize({controls:true,progress:true,history:true,center:true,theme:Reveal.getQueryHash().theme,transition:Reveal.getQueryHash().transition||"default",dependencies:[{src:"http://stdio-ghana.github.io/js/classList.js",condition:function(){return !document.body.classList}},{src:"http://stdio-ghana.github.io/js/notes.js",async:true,condition:function(){return !!document.body.classList}}]});</script> </body> </html>

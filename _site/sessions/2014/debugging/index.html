@@ -1,35 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <title>STDIO Ghana - Debugging</title>
-<link href='/assets/presentation-0e5c0301fdd5869aecb43e89782928b9.css' rel='stylesheet' type='text/css' />
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
-</head>
-<body>
-<div class="reveal"><div class="slides">
-<section>
-<h2>Debugging</h2>
-
-Dane
-</section>
-
-<section>
-	<h2>Bug Types</h2>
-	<p>Syntax Error</p>
-	<p>Runtime Error</p>
-	<p>Logical Error</p>
-</section>
-<section>
-   <section>
-	<h2>Syntax Error</h2>
-	<p>Typo or improper use of code.</p>
-	<p>Compiler or interpreter will alert you prior to execution.</p>
-	<p>ie. Missing colon for a definition</p>
-   </section>
-   <section>
-	<h2><a href="syntax.py">Syntax Error</a></h2>
-<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<!doctype html> <html> <head> <title>STDIO Ghana - Debugging</title> <link href='/assets/presentation-65da1da82bb35b3d39f0b7c5901db486.css' rel='stylesheet' type='text/css'/> <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script> <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script> </head> <body> <div class="reveal"><div class="slides"> <section> <h2>Debugging</h2> Dane </section> <section> <h2>Bug Types</h2> <p>Syntax Error</p> <p>Runtime Error</p> <p>Logical Error</p> </section> <section> <section> <h2>Syntax Error</h2> <p>Typo or improper use of code.</p> <p>Compiler or interpreter will alert you prior to execution.</p> <p>ie. Missing colon for a definition</p> </section> <section> <h2><a href="syntax.py">Syntax Error</a></h2> <div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
@@ -39,19 +8,7 @@ Dane
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
-   </section>
-</section>
-<section>
-   <section>
-	<h2>Runtime Error</h2>
-	<p>Illegal implementation of code or routine, though syntactically correct.</p>
-	<p>Caught during execution, program will immediately crash or exit.</p>
-	<p>ie. Wrong number of function arguments</p>
-   </section>
-   <section>
-	<h2><a href="runtime.py">Runtime Error</a></h2>
-<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div> </section> </section> <section> <section> <h2>Runtime Error</h2> <p>Illegal implementation of code or routine, though syntactically correct.</p> <p>Caught during execution, program will immediately crash or exit.</p> <p>ie. Wrong number of function arguments</p> </section> <section> <h2><a href="runtime.py">Runtime Error</a></h2> <div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
@@ -61,18 +18,7 @@ Dane
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
-   </section>
-</section>
-<section>
-   <section>
-	<h2>Logical Error</h2>
-	<p>Execution completes without error, but behavior or results are unexpected.</p>
-	<p>ie. Wrong format string identifier</p>
-   </section>
-   <section>
-	<h2><a href="logical.py">Logical Error</a></h2>
-<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div> </section> </section> <section> <section> <h2>Logical Error</h2> <p>Execution completes without error, but behavior or results are unexpected.</p> <p>ie. Wrong format string identifier</p> </section> <section> <h2><a href="logical.py">Logical Error</a></h2> <div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
@@ -82,19 +28,7 @@ Dane
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
-   </section>
-</section>
-<section>
-   <section>
-	<h2>Input Validation</h2>
-	<p>A user may type whatever they like into a keyboard.</p>
-	<p>If their input is of an unexpected form, errors may occur</p>
-	<p>ie. Failure to account for user malice</p>
-   </section>
-   <section>
-	<h2><a href="invalid.py">Input Validation</a></h2>
-<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div> </section> </section> <section> <section> <h2>Input Validation</h2> <p>A user may type whatever they like into a keyboard.</p> <p>If their input is of an unexpected form, errors may occur</p> <p>ie. Failure to account for user malice</p> </section> <section> <h2><a href="invalid.py">Input Validation</a></h2> <div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
@@ -104,87 +38,4 @@ Dane
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
-   </section>
-</section>
-<!-- Use the given example after each type above -->
-<!-- Use a different example below, but re-use for each analysis type -->
-<section>
-	<h2>Code Analysis</h2>
-	<p>White Box</p>
-	<p>Black Box</p>
-</section>
-<section>
-	<h2>White Box</h2>
-	<p>Source Code Review</p>
-</section>
-<section>
-	<h2>Save My Restaurant</h2>
-	<p>Some hacker has messed up my beautiful restaurant seating <a href="hostEX.py">program!</a></p>
-	<p>Please, find all the bugs and make our business operational again!</p>
-</section>
-<section>
-	<h2>White Box</h2>
-	<p>Print Statements</p>
-</section>
-<section>
-	<h2>White Box</h2>
-	<p>Return to interpreter</p>
-	<p>python -i</p>
-</section>
-<section>
-	<h2>White Box</h2>
-	<p>Using a Debugger</p>
-</section>
-<section>
-	<h2>White Box</h2>
-	<p>Static Analysis</p>
-	<p>...on source code</p>
-</section>
-<section>
-	<h2>Black Box</h2>
-	<p>Static Analysis</p>
-	<p>...on binary</p>
-	<p>decompile .pyc files</p>
-</section>
-<section>
-	<h2>Black Box</h2>
-	<p>Fuzzing</p>
-</section>
-<section>
-	<h2><a href="http://ericlippert.com/2014/03/05/how-to-debug-small-programs/">Tom's Article</a></h2>
-	<p>Discuss!</p>
-</section>
-<!-- End with big example as a challenge -->
-
-</div></div>
-<script>
-	// Full list of configuration options available here:
-	// https://github.com/hakimel/reveal.js#configuration
-	Reveal.initialize({
-		controls: true,
-		progress: true,
-		history: true,
-		center: true,
-
-		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-		// Parallax scrolling
-		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-		// parallaxBackgroundSize: '2100px 900px',
-
-		// Optional libraries used to extend on reveal.js
-		dependencies: [
-			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-	//		{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-		]
-	});
-</script>
-</body>
-</html>
-
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div> </section> </section> <section> <h2>Code Analysis</h2> <p>White Box</p> <p>Black Box</p> </section> <section> <h2>White Box</h2> <p>Source Code Review</p> </section> <section> <h2>Save My Restaurant</h2> <p>Some hacker has messed up my beautiful restaurant seating <a href="hostEX.py">program!</a></p> <p>Please, find all the bugs and make our business operational again!</p> </section> <section> <h2>White Box</h2> <p>Print Statements</p> </section> <section> <h2>White Box</h2> <p>Return to interpreter</p> <p>python -i</p> </section> <section> <h2>White Box</h2> <p>Using a Debugger</p> </section> <section> <h2>White Box</h2> <p>Static Analysis</p> <p>...on source code</p> </section> <section> <h2>Black Box</h2> <p>Static Analysis</p> <p>...on binary</p> <p>decompile .pyc files</p> </section> <section> <h2>Black Box</h2> <p>Fuzzing</p> </section> <section> <h2><a href="http://ericlippert.com/2014/03/05/how-to-debug-small-programs/">Tom's Article</a></h2> <p>Discuss!</p> </section> </div></div> <script>Reveal.initialize({controls:true,progress:true,history:true,center:true,theme:Reveal.getQueryHash().theme,transition:Reveal.getQueryHash().transition||"default",dependencies:[{src:"http://stdio-ghana.github.io/js/classList.js",condition:function(){return !document.body.classList}},{src:"http://stdio-ghana.github.io/js/notes.js",async:true,condition:function(){return !!document.body.classList}}]});</script> </body> </html>

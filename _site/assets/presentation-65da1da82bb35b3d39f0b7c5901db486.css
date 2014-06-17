@@ -327,6 +327,10 @@ body {
      Name.Entity,
      Name.Namespace */
 }
+.highlight code,
+.highlight pre {
+  margin: 0.1em;
+}
 .highlight span {
   font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
   font-size: 1em;
@@ -456,10 +460,4 @@ list-style-type: disc;*/
 }
 p > a > code {
   color: #95be7d;
-}
-code,
-pre {
-  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
-  font-size: 0.95em;
-  margin: 1em 0 1.5em 0;
 }

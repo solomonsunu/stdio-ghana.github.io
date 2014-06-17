@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'jekyll'
+gem 'reduce'
+gem 'less'
+gem 'japr'

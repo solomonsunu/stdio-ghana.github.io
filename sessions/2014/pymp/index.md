@@ -76,6 +76,10 @@ Uses `map`, `map_async`, and `apply`, `apply_async` for single items
 </section>
 
 <section markdown="block">
+##[Explore Some Other Structures](pymp2.py)
+</section>
+
+<section markdown="block">
 ##Python + Multiprocessing vs. C++?
 
 <aside class="notes" markdown="block">

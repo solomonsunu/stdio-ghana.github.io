@@ -6,4 +6,4 @@ github: gafar-yahaya
 year: 2014
 imagetype: jpg
 ---
-The user of this github is Amin Yayaha Gafar, a level 200 Bsc Computer Science students from the premier university in Ghana.The user has a brief knowledge in programming languages notably C++ and java.He is currently persuing a course in Software Engineering using the Python programming language.
+Amin Yayaha Gafar is the name, a level 200 Bsc Computer Science students from the premier university in Ghana.He has prior knowledge in some programming languages notably C++ and java.He is currently persuing a course in Software Engineering using the Python programming language.

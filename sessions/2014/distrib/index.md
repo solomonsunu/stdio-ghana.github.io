@@ -23,24 +23,29 @@ machines - this is what happens with cluster computation.
 </section>
 
 <section markdown="block">
+
 ## Synchronous
 
 vs.
 
 ## Asynchronous
 
-<aside class="notes" markdown="block">
-Quick vocab check.  Then exercise on with groups manually calculating things
-in series vs parallel.
-</aside>
+</section>
+
+<section markdown="block">
+
+##Exercise
+
+Some teams series, some parallel: sums and products of random numbers.
 
 </section>
+
 
 <section markdown="block">
 ## What made the parallel version easy?
 
 <aside class="notes" markdown="block">
-Aside from simplicity of operation (do a sum or product, probably)
+Aside from simplicity of operation:
 
 - None of the divided pieces depended on the others.
 - the divided pieces were identical
@@ -50,30 +55,52 @@ Aside from simplicity of operation (do a sum or product, probably)
 </section>
 
 <section markdown="block">
-## Problems with Shared State?
+##Another Exercise
+
+Find the schedule and results so far for Group G from 5 different news sites.
+</section>
+
+<section markdown="block">
+##How did you approach problem?
+
+##What did you notice?
+</section>
+
+<section markdown="block">
+##Shared State Exercise
+
+Same as previous exercise, slightly tweaked rules.
 
 <aside class="notes" markdown="block">
-Again, some pen-and-paper exercises.  Dining philosophers?  Repeat the
-earlier exercise, but with a tweak on where they record results.
+Again, some pen-and-paper exercises.
+Same as earlier exercise, but with a tweak on where they record results:
 
-Highlight:
-
-- resource contention
-- result overwrites
+- everyone looks at central sheet of paper
+- for each sum, they write down value they see, calculate
+- then take central sheet, cross out value, and write result
 
 </aside>
+</section>
+
+<section markdown="block">
+
+##What went wrong?
+
 </section>
 
 <section markdown="block">
 High level concepts available when shared state can be avoided:
 
 - filter, map
-- fold (plain, left, and right), scan
+- fold (plain; left and right sometimes), scan
+
+* * *
 
 Ways to avoid shared state
 
 - zip, join
 - flatten
+- *monads*
 
 <aside class="notes" markdown="block">
 Q&A about the concepts.  Write a dummy API for these concepts, have them

@@ -1,7 +1,7 @@
 ---
 layout: presentation
 year: 2014
-title: Effective OOP
+title: Debugging and Multifile Projects
 instructors:
  - Seifu
 ---
@@ -27,4 +27,4 @@ Next write the necessary code to:
 </section>
 <section markdown="block">
 6. What do you think about the documentation? Can you recreate the Employee class without decompiling?
-</section> 
+</section>

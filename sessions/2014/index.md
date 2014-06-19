@@ -40,10 +40,10 @@ elements:
  - name: Warmups
    uri: warmups
    local: true
- - name: Open Session: Databases
+ - name: "Open Session: Databases"
    uri: databases
- - name: Open Session: Debugging and Multifile Projects
+ - name: "Open Session: Debugging and Multifile Projects"
    uri: multifile
- - name: Open Session: Libraries II
+ - name: "Open Session: Libraries II"
    uri: libraries
 ---

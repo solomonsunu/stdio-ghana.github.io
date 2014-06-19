@@ -8,7 +8,7 @@ instructors:
 
 <section markdown="block">
 # Activity
-
+[Employee.pyc](Employee.pyc)
 Create a new file that imports Employee.pyc as Emp.
 
 Next write the necessary code to:
